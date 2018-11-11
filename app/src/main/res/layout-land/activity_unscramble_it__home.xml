@@ -26,7 +26,7 @@
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:layout_marginTop="70dp"
-            android:layout_gravity="top|center"
+            android:layout_gravity="top|left"
             android:gravity="center_vertical|center_horizontal"
             android:textColor="#fff"
             android:background="@drawable/round_button"/>
@@ -37,7 +37,8 @@
             android:src="@drawable/beginner"
             android:adjustViewBounds="true"
             android:layout_marginTop="85dp"
-            android:layout_gravity="top|center"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="top|left"
             android:maxWidth="55dp"
             android:maxHeight="55dp"
             android:scaleType="fitCenter"
@@ -49,13 +50,14 @@
             android:text="@string/txtBeginner"
             android:textColor="@color/black_txtLevels"
             android:layout_marginTop="155dp"
-            android:layout_gravity="top|center"/>
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="top|left"/>
 
         <Button
             android:id="@+id/btnIntermidiate"
             android:layout_width="85dp"
             android:layout_height="85dp"
-            android:layout_marginTop="190dp"
+            android:layout_marginTop="75dp"
             android:layout_gravity="top|center"
             android:gravity="center_vertical|center_horizontal"
             android:textColor="#fff"
@@ -66,7 +68,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/intermidiate"
             android:adjustViewBounds="true"
-            android:layout_marginTop="205dp"
+            android:layout_marginTop="85dp"
             android:layout_gravity="top|center"
             android:maxWidth="55dp"
             android:maxHeight="55dp"
@@ -79,15 +81,15 @@
             android:layout_height="wrap_content"
             android:text="@string/txtIntermediate"
             android:textColor="@color/black_txtLevels"
-            android:layout_marginTop="275dp"
+            android:layout_marginTop="160dp"
             android:layout_gravity="top|center"/>
 
         <Button
             android:id="@+id/btnAdvanced"
             android:layout_width="85dp"
             android:layout_height="85dp"
-            android:layout_marginTop="310dp"
-            android:layout_gravity="top|center"
+            android:layout_marginTop="75dp"
+            android:layout_gravity="top|right"
             android:gravity="center_vertical|center_horizontal"
             android:textColor="#fff"
             android:background="@drawable/round_button"/>
@@ -97,8 +99,9 @@
             android:layout_height="wrap_content"
             android:src="@drawable/advanced"
             android:adjustViewBounds="true"
-            android:layout_marginTop="325dp"
-            android:layout_gravity="top|center"
+            android:layout_marginTop="85dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="top|right"
             android:maxWidth="55dp"
             android:maxHeight="55dp"
             android:scaleType="fitCenter"
@@ -109,9 +112,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/txtAdvanced"
+            android:layout_marginRight="10dp"
             android:textColor="@color/black_txtLevels"
-            android:layout_marginTop="398dp"
-            android:layout_gravity="top|center"/>
+            android:layout_marginTop="160dp"
+            android:layout_gravity="top|right"/>
 
     </FrameLayout>
 </LinearLayout>
