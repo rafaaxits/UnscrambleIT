@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".UnscrambleIT_BeginnerLevels" />
+        <activity android:name=".UnscrambleIT_IntermidiateLevels" />
+        <activity android:name=".UnscrambleIT_AdvancedLevels"></activity>
     </application>
 
 </manifest>
