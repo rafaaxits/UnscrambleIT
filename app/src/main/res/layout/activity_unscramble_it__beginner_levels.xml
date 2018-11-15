@@ -56,15 +56,15 @@
                 android:maxWidth="55dp"
                 android:maxHeight="55dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/begginnerfirstlevel" />
+                android:src="@drawable/beginnerfirstlevel" />
 
             <TextView
                 android:id="@+id/txtFirstLevel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top|center"
-                android:layout_marginTop="115dp"
-                android:text="@string/txtBeginner"
+                android:layout_marginTop="10dp"
+                android:text="@string/txtFirstLevel"
                 android:textColor="@color/black_txtLevels" />
         </FrameLayout>
         <FrameLayout
@@ -94,16 +94,16 @@
                 android:maxWidth="55dp"
                 android:maxHeight="55dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/intermidiate" />
-
+                android:src="@drawable/beginnersecondlevel" />
             <TextView
                 android:id="@+id/txtSecondLevel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top|center"
-                android:layout_marginTop="115dp"
-                android:text="@string/txtIntermediate"
+                android:layout_marginTop="10dp"
+                android:text="@string/txtSecondLevel"
                 android:textColor="@color/black_txtLevels" />
+
         </FrameLayout>
     </LinearLayout>
     <LinearLayout
@@ -138,16 +138,16 @@
                 android:maxWidth="55dp"
                 android:maxHeight="55dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/begginnerfirstlevel" />
-
+                android:src="@drawable/beginnerthirdlevel" />
             <TextView
                 android:id="@+id/txtThirdLevel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top|center"
-                android:layout_marginTop="115dp"
-                android:text="@string/txtBeginner"
+                android:layout_marginTop="10dp"
+                android:text="@string/txtThirdLevel"
                 android:textColor="@color/black_txtLevels" />
+
         </FrameLayout>
         <FrameLayout
             android:layout_width="match_parent"
@@ -176,16 +176,16 @@
                 android:maxWidth="55dp"
                 android:maxHeight="55dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/intermidiate" />
-
+                android:src="@drawable/beginnerfourthlevel" />
             <TextView
                 android:id="@+id/txtFourthLevel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top|center"
-                android:layout_marginTop="115dp"
-                android:text="@string/txtIntermediate"
+                android:layout_marginTop="10dp"
+                android:text="@string/txtFourthLevel"
                 android:textColor="@color/black_txtLevels" />
+
         </FrameLayout>
     </LinearLayout>
     <LinearLayout
@@ -220,15 +220,14 @@
                 android:maxWidth="55dp"
                 android:maxHeight="55dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/intermidiate" />
-
+                android:src="@drawable/beginnerfifthlevel" />
             <TextView
                 android:id="@+id/txtFifthLevel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top|center"
-                android:layout_marginTop="115dp"
-                android:text="@string/txtIntermediate"
+                android:layout_marginTop="10dp"
+                android:text="@string/txtFifthLevel"
                 android:textColor="@color/black_txtLevels" />
         </FrameLayout>
     </LinearLayout>
