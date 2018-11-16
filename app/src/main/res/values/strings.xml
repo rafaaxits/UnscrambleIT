@@ -8,4 +8,5 @@
     <string name="txtThirdLevel">Third Level</string>
     <string name="txtFourthLevel">Fourth Level</string>
     <string name="txtFifthLevel">Fifth Level</string>
+    <string name="txtRanking">Ranking</string>
 </resources>

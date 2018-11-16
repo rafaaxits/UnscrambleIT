@@ -16,6 +16,11 @@ class UnscrambleIT_Home : AppCompatActivity() {
         val actionBar = supportActionBar
         actionBar?.setDisplayHomeAsUpEnabled(true)
 
+        btnRank.setOnClickListener(){
+            val intent = Intent(this, UnscrambleIT_Ranking::class.java)
+            startActivity(intent)
+        }
+
         btnBeginner.setOnClickListener(){
             val intent = Intent(this, UnscrambleIT_BeginnerLevels::class.java)
             startActivity(intent)

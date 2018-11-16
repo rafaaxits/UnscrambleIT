@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".UnscrambleIT_BeginnerLevels" />
         <activity android:name=".UnscrambleIT_IntermidiateLevels" />
-        <activity android:name=".UnscrambleIT_AdvancedLevels"></activity>
+        <activity android:name=".UnscrambleIT_AdvancedLevels" />
+        <activity android:name=".UnscrambleIT_Ranking"></activity>
     </application>
 
 </manifest>
