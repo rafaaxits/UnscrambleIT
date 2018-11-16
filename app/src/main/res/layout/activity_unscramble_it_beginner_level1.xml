@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:background="@color/yellow_AppBackground"
+  tools:context=".UnscrambleIT_beginner_level1">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue_AppNameBackground">
+
+    <TextView
+      android:id="@+id/txtNameLevel"
+      android:layout_width="350dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginLeft="45dp"
+      android:layout_weight="1"
+      android:background="@color/blue_AppNameBackground"
+      android:text="@string/txtFirstLevel"
+      android:textAlignment="textStart"
+      android:textColor="@color/white_AppName"
+      android:textSize="35dp" />
+
+    <ImageView
+      android:id="@+id/imgBeginners2"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_gravity="center"
+      android:layout_weight="1"
+      android:adjustViewBounds="true"
+      android:elevation="55dp"
+      android:maxWidth="95dp"
+      android:maxHeight="95dp"
+      android:scaleType="fitCenter"
+      android:src="@drawable/beginner" />
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="261dp">
+
+    <ImageView
+      android:id="@+id/imgBook"
+      android:layout_width="120dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="35dp"
+      android:layout_weight="1"
+      android:maxWidth="150dp"
+      android:maxHeight="150dp"
+      app:srcCompat="@drawable/bookfirstlevelbeginner" />
+
+    <ImageView
+      android:id="@+id/imgStopWatch"
+      android:layout_width="85dp"
+      android:layout_height="85dp"
+      android:layout_gravity="bottom"
+      android:layout_weight="1"
+      app:srcCompat="@drawable/stopwatchfirstlevelbeginner" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:orientation="horizontal">
+
+      <TextView
+        android:id="@+id/txtViewAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_weight="1"
+        android:textColor="@color/black_txtLevels"
+        android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:orientation="horizontal">
+
+      <Button
+        android:id="@+id/btnBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/blue_AppNameBackground"
+        android:textColor="@color/white_AppName"
+        android:layout_marginLeft="5dp"
+        android:text="Book" />
+
+      <Button
+        android:id="@+id/btnIs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/blue_AppNameBackground"
+        android:textColor="@color/white_AppName"
+        android:layout_marginLeft="5dp"
+        android:text="Is" />
+
+      <Button
+        android:id="@+id/btnThe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/blue_AppNameBackground"
+        android:textColor="@color/white_AppName"
+        android:layout_marginLeft="5dp"
+        android:text="The" />
+
+      <Button
+        android:id="@+id/btnOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/blue_AppNameBackground"
+        android:textColor="@color/white_AppName"
+        android:layout_marginLeft="5dp"
+        android:text="On" />
+
+      <Button
+        android:id="@+id/btnTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/blue_AppNameBackground"
+        android:textColor="@color/white_AppName"
+        android:layout_marginLeft="5dp"
+        android:text="Table" />
+
+    </LinearLayout>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Enviar" />
+    </LinearLayout>
+
+  </LinearLayout>
+
+
+</LinearLayout>
+
