@@ -9,4 +9,8 @@
     <string name="txtFourthLevel">Quarto Nível</string>
     <string name="txtFifthLevel">Quinto Nível</string>
     <string name="txtRanking">Ranking</string>
+    <string name="txtSend">Enviar</string>
+    <string name="txtClear">Limpar</string>
+    <string name="txtPlayerName">Nome do jogador</string>
+    <string name="txtPoints">Pontos</string>
 </resources>

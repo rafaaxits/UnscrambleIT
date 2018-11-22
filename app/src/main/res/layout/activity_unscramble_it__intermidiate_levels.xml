@@ -6,7 +6,7 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:orientation="vertical"
 android:background="@color/yellow_AppBackground"
-tools:context=".UnscrambleIT_IntermidiateLevels">
+tools:context=".view.activities.UnscrambleIT_IntermidiateLevels">
 
 <LinearLayout
     android:layout_width="match_parent"

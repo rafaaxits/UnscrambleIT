@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.interaction.acitivity.unscrambleit">
+    package="com.interaction.acitivity.unscrambleit">
 
-  <application
-    android:allowBackup="true"
-    android:icon="@mipmap/ic_launcher"
-    android:label="@string/app_name"
-    android:roundIcon="@mipmap/ic_launcher_round"
-    android:supportsRtl="true"
-    android:theme="@style/AppTheme">
-    <activity android:name=".UnscrambleIT_Home">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.activities.UnscrambleIT_Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UnscrambleIT_BeginnerLevels" />
-        <activity android:name=".UnscrambleIT_IntermidiateLevels" />
-        <activity android:name=".UnscrambleIT_AdvancedLevels" />
-        <activity android:name=".UnscrambleIT_Ranking"></activity>
-        <activity android:name=".UnscrambleIT_beginner_level1"></activity>
+        <activity android:name=".view.activities.UnscrambleIT_BeginnerLevels" />
+        <activity android:name=".view.activities.UnscrambleIT_IntermidiateLevels" />
+        <activity android:name=".view.activities.UnscrambleIT_AdvancedLevels" />
+        <activity android:name=".view.activities.UnscrambleIT_Ranking" />
+        <activity android:name=".view.activities.UnscrambleIT_beginner_level1" />
+        <activity android:name=".view.fragments.homeScreenWorkAroundFragment"></activity>
     </application>
 
 </manifest>

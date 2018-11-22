@@ -9,4 +9,11 @@
     <string name="txtFourthLevel">Fourth Level</string>
     <string name="txtFifthLevel">Fifth Level</string>
     <string name="txtRanking">Ranking</string>
+    <string name="txtSend">Send</string>
+    <string name="txtClear">Clear</string>
+    <string name="txtPlayerName">Player Name</string>
+    <string name="txtPoints">Points</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

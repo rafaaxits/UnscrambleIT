@@ -7,7 +7,7 @@
   android:layout_height="match_parent"
   android:orientation="vertical"
   android:background="@color/yellow_AppBackground"
-  tools:context=".UnscrambleIT_beginner_level1">
+  tools:context=".view.activities.UnscrambleIT_beginner_level1">
 
   <LinearLayout
     android:layout_width="match_parent"
@@ -150,14 +150,24 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent"
       android:layout_weight="1"
-      android:orientation="vertical">
+      android:orientation="horizontal">
 
       <Button
-        android:id="@+id/button11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:text="Enviar" />
+          android:id="@+id/btnClear"
+          android:background="@color/white_AppName"
+          android:layout_width="wrap_content"
+          android:layout_margin="10dp"
+          android:layout_height="wrap_content"
+          android:text="@string/txtClear"
+          android:layout_weight="1"/>
+        <Button
+          android:id="@+id/butnSend"
+            android:background="@color/white_AppName"
+          android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+          android:layout_height="wrap_content"
+          android:text="@string/txtSend"
+          android:layout_weight="1"/>
     </LinearLayout>
 
   </LinearLayout>
