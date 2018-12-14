@@ -1,12 +1,14 @@
 package com.interaction.acitivity.unscrambleit.view.fragments
 
-import android.app.Fragment
-import android.content.Context
+
 import android.content.Intent
 import android.os.Bundle
-import android.view.*
+import android.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
-import com.interaction.acitivity.unscrambleit.*
+import com.interaction.acitivity.unscrambleit.R
 import com.interaction.acitivity.unscrambleit.view.activities.UnscrambleIT_LevelsScreen
 
 
@@ -17,32 +19,23 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Activities that contain this fragment must implement the
- * [homeFragment.OnFragmentInteractionListener] interface
- * to handle interaction events.
- * Use the [homeFragment.newInstance] factory method to
- * create an instance of this fragment.
  *
  */
-public class homeFragment : android.app.Fragment() {
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
+class tabletFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.fragment_home, container, false)
+        // Inflate the layout for this fragment
+        val view = inflater.inflate(R.layout.fragment_tablet, container, false)
         var btnRank = view.findViewById<Button>(R.id.btnRank)
         var btnBeginner = view.findViewById<Button>(R.id.btnBeginner)
         var btnIntermidiate = view.findViewById<Button>(R.id.btnIntermidiate)
         var btnAdvanced = view.findViewById<Button>(R.id.btnAdvanced)
-
         btnRank.setOnClickListener(){
             val fragmentManager2 = getFragmentManager()
             val fragmentTransaction2 = fragmentManager2!!.beginTransaction()
-            val myFragmentRanking = rankingFragment()
-            fragmentTransaction2.replace(R.id.container1, myFragmentRanking)
+            val myfragment2 = rankingFragment()
+            fragmentTransaction2.replace(R.id.container1, myfragment2)
             fragmentTransaction2.commit()
         }
 
@@ -63,16 +56,8 @@ public class homeFragment : android.app.Fragment() {
             intent.putExtra("level", "Advanced")
             startActivity(intent)
         }
-        return view;
+        return view
     }
 
-    fun getScreenOrientation(context: Context): String {
-        val screenOrientation = (context.getSystemService(Context.WINDOW_SERVICE) as WindowManager).defaultDisplay.orientation
-        when (screenOrientation) {
-            Surface.ROTATION_0 -> return "android portrait screen"
-            Surface.ROTATION_90 -> return "android landscape screen"
-            Surface.ROTATION_180 -> return "android reverse portrait screen"
-            else -> return "android reverse landscape screen"
-        }
-    }
+
 }

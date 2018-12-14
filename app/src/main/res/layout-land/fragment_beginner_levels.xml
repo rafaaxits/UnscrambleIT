@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/fragBeginnerLevelsLand"
+    android:background="@color/yellow_AppBackground"
+    tools:context=".view.fragments.BeginnerLevelsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5">
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@color/blue_AppNameBackground"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/white_AppName"
+            android:textSize="35dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:id="@+id/btnFirstLevel"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_button"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:id="@+id/imgFirstLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="45dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="55dp"
+                    android:maxWidth="55dp"
+                    android:maxHeight="55dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/beginnerfirstlevel" />
+
+                <TextView
+                    android:id="@+id/txtFirstLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/txtFirstLevel"
+                    android:textColor="@color/black_txtLevels" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:id="@+id/btnSecondLevel"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_button"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:id="@+id/imgSecondLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="45dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="55dp"
+                    android:maxWidth="55dp"
+                    android:maxHeight="55dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/beginnersecondlevel" />
+
+                <TextView
+                    android:id="@+id/txtSecondLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/txtSecondLevel"
+                    android:textColor="@color/black_txtLevels" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:id="@+id/btnFourthLevel"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_button"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:id="@+id/imgFourthLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="45dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="55dp"
+                    android:maxWidth="55dp"
+                    android:maxHeight="55dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/beginnerfourthlevel" />
+
+                <TextView
+                    android:id="@+id/txtFourthLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/txtFourthLevel"
+                    android:textColor="@color/black_txtLevels" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.5">
+
+                <Button
+                    android:id="@+id/btnThirdLevel"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_button"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:id="@+id/imgThirdLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="45dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="55dp"
+                    android:maxWidth="55dp"
+                    android:maxHeight="55dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/beginnerthirdlevel" />
+
+                <TextView
+                    android:id="@+id/txtThirdLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/txtThirdLevel"
+                    android:textColor="@color/black_txtLevels" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="113dp"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnFifthLevel"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/round_button"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textColor="#fff" />
+
+                <ImageView
+                    android:id="@+id/imgFifthLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="45dp"
+                    android:adjustViewBounds="true"
+                    android:elevation="55dp"
+                    android:maxWidth="55dp"
+                    android:maxHeight="55dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/beginnerfifthlevel" />
+
+                <TextView
+                    android:id="@+id/txtFifthLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:textStyle="bold"
+                    android:textSize="22dp"
+                    android:fontFamily="@font/annie_use_your_telescope"
+                    android:text="@string/txtFifthLevel"
+                    android:textColor="@color/black_txtLevels" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

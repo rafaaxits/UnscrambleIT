@@ -1,13 +1,15 @@
 package com.interaction.acitivity.unscrambleit.view.activities
 
-import android.content.Intent
+import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import com.interaction.acitivity.unscrambleit.*
-import com.interaction.acitivity.unscrambleit.view.fragments.homeScreenWorkAroundFragment
-import kotlinx.android.synthetic.main.activity_unscramble_it__home.*
+import com.interaction.acitivity.unscrambleit.view.fragments.homeFragment
+//import com.interaction.acitivity.unscrambleit.view.fragments.homeFragmentLand
+import com.interaction.acitivity.unscrambleit.view.fragments.rankingFragment
+import com.interaction.acitivity.unscrambleit.view.fragments.tabletFragment
+import android.view.*
+
 
 class UnscrambleIT_Home : AppCompatActivity() {
 
@@ -17,31 +19,30 @@ class UnscrambleIT_Home : AppCompatActivity() {
 
         val actionBar = supportActionBar
         actionBar?.setDisplayHomeAsUpEnabled(true)
+
         val validate = resources.getBoolean(R.bool.isTablet)
         if(validate) {
             if(savedInstanceState == null){
-                val intent = Intent(this, homeScreenWorkAroundFragment::class.java)
-                startActivity(intent)
+                val fragmentManager = fragmentManager
+                val fragmentTransaction = fragmentManager!!.beginTransaction()
+                val myFragmentTablet = tabletFragment()
+                fragmentTransaction.replace(R.id.container1, myFragmentTablet)
+                fragmentTransaction.commit()
+
+                val fragmentManager2 = getFragmentManager()
+                val fragmentTransaction2 = fragmentManager2!!.beginTransaction()
+                val myFragmentRanking = rankingFragment()
+                fragmentTransaction2.replace(R.id.container2, myFragmentRanking)
+                fragmentTransaction2.commit()
             }
-        }
-        btnRank.setOnClickListener(){
-                val intent = Intent(this, UnscrambleIT_Ranking::class.java)
-                startActivity(intent)
-        }
-
-        btnBeginner.setOnClickListener(){
-            val intent = Intent(this, UnscrambleIT_BeginnerLevels::class.java)
-            startActivity(intent)
-        }
-
-        btnIntermidiate.setOnClickListener(){
-            val intent = Intent(this, UnscrambleIT_IntermidiateLevels::class.java)
-            startActivity(intent)
-        }
-
-        btnAdvanced.setOnClickListener(){
-            val intent = Intent(this, UnscrambleIT_AdvancedLevels::class.java)
-            startActivity(intent)
+        } else {
+            if(savedInstanceState == null) {
+                val fragmentManager = fragmentManager
+                val fragmentTransaction = fragmentManager!!.beginTransaction()
+                val myFragmentPortrait = homeFragment()
+                fragmentTransaction.replace(R.id.container1, myFragmentPortrait)
+                fragmentTransaction.commit()
+            }
         }
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -51,5 +52,15 @@ class UnscrambleIT_Home : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         return true
+    }
+
+    fun getScreenOrientation(context: Context): String {
+        val screenOrientation = (context.getSystemService(Context.WINDOW_SERVICE) as WindowManager).defaultDisplay.orientation
+        when (screenOrientation) {
+            Surface.ROTATION_0 -> return "android portrait screen"
+            Surface.ROTATION_90 -> return "android landscape screen"
+            Surface.ROTATION_180 -> return "android reverse portrait screen"
+            else -> return "android reverse landscape screen"
+        }
     }
 }

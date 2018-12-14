@@ -5,20 +5,12 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:id="@+id/list"
-    tools:context=".view.activities.UnscrambleIT_Home"
+    tools:context=".view.activities.UnscrambleIT_LevelsScreen"
     android:background="@color/yellow_AppBackground">
     <LinearLayout
         android:id="@+id/container1"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/container2"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_height="match_parent">
     </LinearLayout>
 </LinearLayout>

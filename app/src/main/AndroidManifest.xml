@@ -10,18 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".view.activities.UnscrambleIT_Home">
+            android:configChanges = "orientation|screenSize"
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.activities.UnscrambleIT_BeginnerLevels" />
-        <activity android:name=".view.activities.UnscrambleIT_IntermidiateLevels" />
-        <activity android:name=".view.activities.UnscrambleIT_AdvancedLevels" />
-        <activity android:name=".view.activities.UnscrambleIT_Ranking" />
-        <activity android:name=".view.activities.UnscrambleIT_beginner_level1" />
-        <activity android:name=".view.fragments.homeScreenWorkAroundFragment"></activity>
+        <activity android:name=".view.activities.UnscrambleIT_beginner_level1"/>
+        <activity android:name=".view.activities.UnscrambleIT_LevelsScreen"></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
