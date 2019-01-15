@@ -91,7 +91,7 @@ class IntermidiateLevelsFragment : android.app.Fragment() {
         R.id.action_SignOut -> {
             mAuth!!.signOut()
             LoginManager.getInstance().logOut()
-            Toast.makeText(activity, "User Disconnected!!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(activity, R.string.txt_UserDisconnected, Toast.LENGTH_SHORT).show()
             val intent = Intent(activity, UnscrambleIT_SignIn::class.java)
             startActivity(intent)
             true

@@ -26,4 +26,10 @@
     <string name="txt_Next">Next</string>
     <string name="txt_Menu">Menu</string>
     <string name="txt_Home">Home</string>
+    <string name="txt_CompleteSetence">COMPLETE THE SETENCE</string>
+    <string name="txt_UserSigned">User Signed</string>
+    <string name="txt_UserCreated">User Created</string>
+    <string name="txt_UserDisconnected">User Disconnected</string>
+    <string name="txt_AuthFailed">Authentication failed</string>
+    <string name="txt_UserAlreadySigned">User already Signed</string>
 </resources>

@@ -219,7 +219,7 @@ class UnscrambleIT_beginner_level1 : AppCompatActivity() {
                      var needToComplete = false
                      for(i: Int in 0 until setenceToCompleteList.size){
                          if(setenceToCompleteList[i].text.toString().equals("")){
-                             Toast.makeText(applicationContext,"COMPLETE THE SETENCE", Toast.LENGTH_SHORT).show()
+                             Toast.makeText(applicationContext,R.string.txt_CompleteSetence, Toast.LENGTH_SHORT).show()
                              needToComplete = true
                          }
                      }
@@ -232,13 +232,13 @@ class UnscrambleIT_beginner_level1 : AppCompatActivity() {
                              }
                          }
                          if(userSetence.equals(finalSetence)){
-                             Toast.makeText(applicationContext,"YOU WIN", Toast.LENGTH_SHORT).show()
+                             Toast.makeText(applicationContext,R.string.txt_YouWin, Toast.LENGTH_SHORT).show()
                              val intent = Intent(applicationContext, UnscrambleIT_GameResult::class.java)
                              intent.putExtra("level", level)
                              intent.putExtra("result", "YOU WIN")
                              startActivity(intent)
                          }else{
-                             Toast.makeText(applicationContext,"YOU LOSE", Toast.LENGTH_SHORT).show()
+                             Toast.makeText(applicationContext,R.string.txt_YouLose, Toast.LENGTH_SHORT).show()
                              val intent = Intent(applicationContext, UnscrambleIT_GameResult::class.java)
                              intent.putExtra("level", level)
                              intent.putExtra("result", "YOU LOSE")

@@ -2,6 +2,8 @@ package com.interaction.acitivity.unscrambleit.view.activities
 
 import android.app.ListActivity
 import android.content.Intent
+import android.content.pm.PackageInfo
+import android.content.pm.PackageManager
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -26,6 +28,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.AuthCredential
 import com.google.firebase.auth.GoogleAuthProvider
+import java.security.MessageDigest
 
 
 class UnscrambleIT_SignIn : AppCompatActivity() {
@@ -58,6 +61,7 @@ class UnscrambleIT_SignIn : AppCompatActivity() {
 
         login_button.setReadPermissions("email", "public_profile")
 
+
         login_button.setOnClickListener {
             login_button.registerCallback(callbackManager, object : FacebookCallback<LoginResult> {
                 override fun onSuccess(loginResult: LoginResult) {
@@ -82,7 +86,7 @@ class UnscrambleIT_SignIn : AppCompatActivity() {
         mAuth!!.signInWithEmailAndPassword(edtMail.text.toString(), edtPassword.text.toString())
             .addOnCompleteListener { task ->
                 if(task.isSuccessful){
-                    Toast.makeText(applicationContext, "User Signed!!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(applicationContext, R.string.txt_UserSigned, Toast.LENGTH_SHORT).show()
                     val intent = Intent(applicationContext, UnscrambleIT_Home::class.java)
                     startActivity(intent)
                 }
@@ -97,7 +101,7 @@ class UnscrambleIT_SignIn : AppCompatActivity() {
         mAuth!!.createUserWithEmailAndPassword(edtMail.text.toString(), edtPassword.text.toString())
             .addOnCompleteListener{ task ->
                 if(task.isSuccessful){
-                    Toast.makeText(applicationContext, "User Created!!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(applicationContext, R.string.txt_UserCreated, Toast.LENGTH_SHORT).show()
                 }
             }
             .addOnFailureListener { exception ->
@@ -113,12 +117,12 @@ class UnscrambleIT_SignIn : AppCompatActivity() {
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         Log.d(TAG, "signInWithCredential:success")
-                        Toast.makeText(applicationContext, "User Signed!!", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(applicationContext, R.string.txt_UserSigned, Toast.LENGTH_SHORT).show()
                         val intent = Intent(applicationContext, UnscrambleIT_Home::class.java)
                         startActivity(intent)
                     } else {
                         Log.w(TAG, "signInWithCredential:failure", task.exception)
-                        Toast.makeText(baseContext, "Authentication failed.",
+                        Toast.makeText(baseContext, R.string.txt_AuthFailed,
                                 Toast.LENGTH_SHORT).show()
                     }
                 }
@@ -148,12 +152,12 @@ class UnscrambleIT_SignIn : AppCompatActivity() {
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
                         Log.d(TAGGOOGLE, "signInWithCredential:success")
-                        Toast.makeText(applicationContext, "User Signed!!", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(applicationContext, R.string.txt_UserSigned, Toast.LENGTH_SHORT).show()
                         val intent = Intent(applicationContext, UnscrambleIT_Home::class.java)
                         startActivity(intent)
                     } else {
                         Log.w(TAGGOOGLE, "signInWithCredential:failure", task.exception)
-                        Toast.makeText(baseContext, "Authentication failed.",
+                        Toast.makeText(baseContext, R.string.txt_AuthFailed,
                                 Toast.LENGTH_SHORT).show()
                     }
                 }
@@ -164,7 +168,7 @@ class UnscrambleIT_SignIn : AppCompatActivity() {
         // Check if user is signed in (non-null) and update UI accordingly.
         val currentUser = mAuth!!.currentUser
         if(currentUser != null){
-            Toast.makeText(applicationContext, "User already Signed!!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext, R.string.txt_UserAlreadySigned, Toast.LENGTH_SHORT).show()
             val intent = Intent(applicationContext, UnscrambleIT_Home::class.java)
             startActivity(intent)
         }
