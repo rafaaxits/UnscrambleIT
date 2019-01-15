@@ -3,22 +3,24 @@ package com.interaction.acitivity.unscrambleit.view.activities
 import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.Toolbar
+import com.facebook.CallbackManager
 import com.interaction.acitivity.unscrambleit.*
 import com.interaction.acitivity.unscrambleit.view.fragments.homeFragment
 //import com.interaction.acitivity.unscrambleit.view.fragments.homeFragmentLand
 import com.interaction.acitivity.unscrambleit.view.fragments.rankingFragment
 import com.interaction.acitivity.unscrambleit.view.fragments.tabletFragment
 import android.view.*
+import android.content.Intent
+
+
 
 
 class UnscrambleIT_Home : AppCompatActivity() {
-
+    var callbackManager = CallbackManager.Factory.create();
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_unscramble_it__home)
-
-        val actionBar = supportActionBar
-        actionBar?.setDisplayHomeAsUpEnabled(true)
 
         val validate = resources.getBoolean(R.bool.isTablet)
         if(validate) {
@@ -45,13 +47,9 @@ class UnscrambleIT_Home : AppCompatActivity() {
             }
         }
     }
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        finish()
-        return true
-    }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        return true
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return false
     }
 
     fun getScreenOrientation(context: Context): String {
@@ -63,4 +61,14 @@ class UnscrambleIT_Home : AppCompatActivity() {
             else -> return "android reverse landscape screen"
         }
     }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater = this.menuInflater
+        inflater.inflate(R.menu.menu, menu)
+        return true
+    }
+
+    /*override fun onPrepareOptionsMenu(menu: Menu): Boolean {
+        return false
+    }*/
 }

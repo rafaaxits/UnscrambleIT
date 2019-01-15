@@ -69,11 +69,16 @@ class UnscrambleIT_LevelsScreen : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        finish()
-        return true
+        return false
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater = this.menuInflater
+        inflater.inflate(R.menu.menu2, menu)
         return true
     }
+
+    /*override fun onPrepareOptionsMenu(menu: Menu): Boolean {
+        return false
+    }*/
 }

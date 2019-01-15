@@ -15,18 +15,19 @@
     android:layout_weight="0.5"
     android:background="@color/blue_AppNameBackground">
 
-    <TextView
-      android:id="@+id/txtNameLevel"
-      android:layout_width="350dp"
-      android:layout_height="wrap_content"
-      android:layout_gravity="center_horizontal"
-      android:layout_marginLeft="45dp"
-      android:layout_weight="1"
-      android:background="@color/blue_AppNameBackground"
-      android:text="@string/txtFirstLevel"
-      android:textAlignment="textStart"
-      android:textColor="@color/white_AppName"
-      android:textSize="35dp" />
+      <TextView
+          android:id="@+id/txtLevelName"
+          android:layout_width="350dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginLeft="45dp"
+          android:fontFamily="@font/monoton"
+          android:layout_weight="1"
+          android:background="@color/blue_AppNameBackground"
+          android:text="@string/app_name"
+          android:textAlignment="textStart"
+          android:textColor="@color/white_AppName"
+          android:textSize="30dp" />
 
     <ImageView
       android:id="@+id/imgBeginners2"
@@ -77,6 +78,13 @@
         android:id="@+id/setenceToComplete"
         android:orientation="horizontal">
       </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:id="@+id/setenceToComplete2"
+          android:orientation="horizontal">
+      </LinearLayout>
 
       <LinearLayout
         android:layout_width="match_parent"
@@ -84,6 +92,13 @@
         android:layout_weight="1"
         android:id="@+id/setenceButtons"
         android:orientation="horizontal">
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:orientation="horizontal"
+          android:id="@+id/setenceButtons2">
       </LinearLayout>
 
       <LinearLayout

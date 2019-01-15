@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.UnscrambleIT_SignIn"
+    android:orientation="vertical"
+    android:background="@color/yellow_AppBackground">
+
+    <FrameLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top" />
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/signInButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center|bottom"
+            android:visibility="visible"
+            android:layout_marginTop="30dp"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <EditText
+            android:id="@+id/edtMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:layout_marginTop="30dp"/>
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="Senha"
+            android:layout_marginTop="40dp"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnSignin"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="60dp"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:onClick="signIn"
+                android:background="@drawable/round_button"
+                android:textStyle="bold"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:text="@string/txt_SignIn" />
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="right"
+                android:background="@drawable/round_button"
+                android:layout_marginRight="60dp"
+                android:layout_weight="1"
+                android:onClick="signUp"
+                android:textStyle="bold"
+                android:fontFamily="@font/annie_use_your_telescope"
+                android:text="@string/txt_SignUp" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

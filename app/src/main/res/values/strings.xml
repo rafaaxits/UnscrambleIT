@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">UnscrambleIT</string>
     <string name="txtBeginner">Beginner</string>
-    <string name="txtIntermediate">Intermidiate</string>
+    <string name="txtIntermediate">Intermediate</string>
     <string name="txtAdvanced">Advanced</string>
     <string name="txtFirstLevel">First Level</string>
     <string name="txtSecondLevel">Second Level</string>
@@ -13,4 +13,17 @@
     <string name="txtClear">Clear</string>
     <string name="txtPlayerName">Player Name</string>
     <string name="txtPoints">Points</string>
+    <string name="facebook_app_id">982667408595813</string>
+    <string name="fb_login_protocol_scheme">fb982667408595813</string>
+    <string name="txt_SignOut">Sign Out</string>
+    <string name="txt_SignIn">Sign In</string>
+    <string name="txt_SignUp">Sign Up</string>
+    <string name="txt_YouWin">You Win!!</string>
+    <string name="txt_YouLose">You Lose!!</string>
+    <string name="txt_Congrats">Congratulations</string>
+    <string name="txt_Sorry">Sorry</string>
+    <string name="txt_Back">Back</string>
+    <string name="txt_Next">Next</string>
+    <string name="txt_Menu">Menu</string>
+    <string name="txt_Home">Home</string>
 </resources>

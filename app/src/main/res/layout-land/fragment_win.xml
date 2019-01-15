@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow_AppBackground"
+    android:orientation="vertical"
+    tools:context=".view.fragments.WinFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/blue_AppNameBackground"
+            android:fontFamily="@font/monoton"
+            android:text="@string/txt_Congrats"
+            android:textAlignment="center"
+            android:textColor="@color/white_AppName"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/monoton"
+            android:textStyle="bold"
+            android:text="@string/txt_YouWin"
+            android:textColor="@color/blue_AppNameBackground"
+            android:textSize="45dp" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="60dp"
+            android:layout_weight="1"
+            android:layout_gravity="left|bottom"
+            android:background="@drawable/round_button"/>
+
+        <ImageView
+            android:id="@+id/imgLeftArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="63dp"
+            android:layout_gravity="bottom|left"
+            android:adjustViewBounds="true"
+            android:elevation="55dp"
+            android:maxWidth="50dp"
+            android:maxHeight="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/leftarrow"/>
+
+        <TextView
+            android:id="@+id/txtBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="49dp"
+            android:layout_marginLeft="65dp"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="@string/txt_Back"
+            android:textColor="@color/black_txtLevels"/>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/round_button"
+            android:layout_marginRight="60dp"
+            android:layout_gravity="right|bottom"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/imgReftArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="63dp"
+            android:layout_gravity="bottom|right"
+            android:adjustViewBounds="true"
+            android:elevation="55dp"
+            android:maxWidth="50dp"
+            android:maxHeight="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/rightarrow"/>
+
+        <TextView
+            android:id="@+id/txtNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="49dp"
+            android:layout_marginRight="69dp"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:fontFamily="@font/annie_use_your_telescope"
+            android:text="@string/txt_Next"
+            android:textColor="@color/black_txtLevels"/>
+    </FrameLayout>
+</LinearLayout>

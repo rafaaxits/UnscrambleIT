@@ -3,23 +3,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/list"
+    android:orientation="vertical"
     tools:context=".view.fragments.tabletFragment"
     android:background="@color/yellow_AppBackground">
-    <LinearLayout
-        android:orientation="vertical"
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:backgroundTint="@color/blue_AppNameBackground"
+        android:textColor="@color/white_AppName"
+        android:textAlignment="center"
+        android:text="@string/app_name"
+        android:fontFamily="@font/monoton"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:textSize="35dp">
         <TextView
             android:id="@+id/appName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            android:layout_marginTop="10dp"
             android:background="@color/blue_AppNameBackground"
+            android:fontFamily="@font/monoton"
+            android:text="@string/app_name"
+            android:textAlignment="center"
             android:textColor="@color/white_AppName"
-            android:textSize="35dp"
-            android:textAlignment="center"/>
+            android:textSize="35dp" />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -121,40 +141,6 @@
                 android:textColor="@color/black_txtLevels"
                 android:layout_marginTop="160dp"
                 android:layout_gravity="top|right"/>
-
-        </FrameLayout>
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="5">
-
-            <Button
-                android:id="@+id/btnRank"
-                android:layout_width="55dp"
-                android:layout_height="55dp"
-                android:layout_gravity="left|center"
-                android:background="@drawable/round_button"
-                android:gravity="center_vertical|center_horizontal"
-                android:textColor="#fff" />
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left|center"
-                android:adjustViewBounds="true"
-                android:layout_marginLeft="7dp"
-                android:elevation="40dp"
-                android:maxWidth="50dp"
-                android:maxHeight="40dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/ranking"/>
-            <TextView
-                android:id="@+id/txtRanking"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="left|center"
-                android:layout_marginTop="35dp"
-                android:text="@string/txtRanking"
-                android:textColor="@color/black_txtLevels" />
 
         </FrameLayout>
     </LinearLayout>
